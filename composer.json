@@ -1,11 +1,15 @@
 {
-    "name": "sylius/archetype-bundle",
+    "name": "fosyl/archetype-bundle",
     "type": "symfony-bundle",
-    "description": "Archetypes of models for your Symfony2 applications.",
+    "description": "Archetypes of models for your Sylius and Symfony2 applications.",
     "keywords": ["shop", "ecommerce", "products", "product", "assortment", "prototypes", "archetypes"],
-    "homepage": "http://sylius.org",
+    "homepage": "https://github.com/friendsofsylius",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Adam Elsodaney",
+            "homepage": "http://pjedrzejewski.com"
+        },
         {
             "name": "Paweł Jędrzejewski",
             "homepage": "http://pjedrzejewski.com"
@@ -16,7 +20,7 @@
         },
         {
             "name": "Community contributions",
-            "homepage": "http://github.com/Sylius/Sylius/contributors"
+            "homepage": "http://github.com/friendsofsylius/archetype-bundle/contributors"
         }
     ],
     "require": {
@@ -37,22 +41,16 @@
         "bin-dir": "bin"
     },
     "autoload": {
-        "psr-4": { "Sylius\\Bundle\\ArchetypeBundle\\": "" }
+        "psr-4": { "Sylius\\Bundle\\ArchetypeBundle\\": "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "Sylius\\Bundle\\ArchetypeBundle\\spec\\": "spec/" }
+        "psr-4": { "spec\\Sylius\\Bundle\\ArchetypeBundle\\": "spec/" }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../../*/*"
-        }
-    ],
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "dev-master": "0.19-dev"
         }
     }
 }
