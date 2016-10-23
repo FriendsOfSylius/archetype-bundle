@@ -1,11 +1,15 @@
 {
-    "name": "sylius/archetype-bundle",
+    "name": "fosyl/archetype-bundle",
     "type": "symfony-bundle",
-    "description": "Archetypes of models for your Symfony2 applications.",
+    "description": "Archetypes of models for your Sylius and Symfony2 applications.",
     "keywords": ["shop", "ecommerce", "products", "product", "assortment", "prototypes", "archetypes"],
-    "homepage": "http://sylius.org",
+    "homepage": "https://github.com/friendsofsylius",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Adam Elsodaney",
+            "homepage": "http://github.com/adamelso"
+        },
         {
             "name": "Paweł Jędrzejewski",
             "homepage": "http://pjedrzejewski.com"
@@ -16,16 +20,16 @@
         },
         {
             "name": "Community contributions",
-            "homepage": "http://github.com/Sylius/Sylius/contributors"
+            "homepage": "http://github.com/friendsofsylius/archetype-bundle/contributors"
         }
     ],
     "require": {
         "php": "^5.6|^7.0",
 
-        "sylius/archetype": "^1.0",
-        "sylius/attribute-bundle": "^1.0",
-        "sylius/resource-bundle": "^1.0",
-        "sylius/variation-bundle": "^1.0",
+        "fosyl/archetype": "dev-master",
+        "sylius/product": "^1.0 | ^0.19",
+        "sylius/attribute-bundle": "^1.0 | ^0.19",
+        "sylius/resource-bundle": "^1.0 | ^0.19",
         "symfony/framework-bundle": "^2.8"
     },
     "require-dev": {
@@ -38,22 +42,16 @@
         "bin-dir": "bin"
     },
     "autoload": {
-        "psr-4": { "Sylius\\Bundle\\ArchetypeBundle\\": "" }
+        "psr-4": { "Sylius\\Bundle\\ArchetypeBundle\\": "src/" }
     },
     "autoload-dev": {
-        "psr-4": { "Sylius\\Bundle\\ArchetypeBundle\\spec\\": "spec/" }
+        "psr-4": { "spec\\Sylius\\Bundle\\ArchetypeBundle\\": "spec/" }
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "repositories": [
-        {
-            "type": "path",
-            "url": "../../*/*"
-        }
-    ],
     "extra": {
         "branch-alias": {
-            "dev-master": "1.0-dev"
+            "dev-master": "0.20-dev"
         }
     }
 }
