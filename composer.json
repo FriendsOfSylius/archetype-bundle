@@ -42,7 +42,7 @@
         "bin-dir": "bin"
     },
     "autoload": {
-        "psr-4": { "Sylius\\Bundle\\ArchetypeBundle\\": "" }
+        "psr-4": { "Sylius\\Bundle\\ArchetypeBundle\\": "src/" }
     },
     "autoload-dev": {
         "psr-4": { "spec\\Sylius\\Bundle\\ArchetypeBundle\\": "spec/" }
